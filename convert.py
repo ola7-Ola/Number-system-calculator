@@ -3,6 +3,7 @@ class Number_system:
         converts value of Number System from baseX to baseY provided baseX, baseY is >=2 and <= 36         
     """
     def __init__(self):
+        # accepted number range from, 0 - Z
         self.legal_base_36 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
     def base_validator(self, base):

@@ -110,7 +110,8 @@ class gui (Number_system):
 
     def to_equiv_base(self):
         """"
-            
+            perform necessary operation with operands in base10
+            and return value in output base
         """
         base_10 = str(self.baseX_to_base10( self.entry_value.get(), self.entry_base.get() ) )
         gui.operand.append(self.baseX_to_base10(  self.entry_value.get(),self.entry_base.get() ))
@@ -132,7 +133,7 @@ class gui (Number_system):
 
     def submit(self):
         """
-            Performs every calculation 
+            Basically prints the result to the board
         """
         if data := self.entry_value.get():
             if not data.isalnum():
@@ -179,7 +180,7 @@ class gui (Number_system):
 
     def subscript(self, base, data=""):
         '''
-            converts base to subscript
+            converts value_base to subscript
         '''
         sub = list(base)
         for i in sub:
@@ -187,6 +188,9 @@ class gui (Number_system):
         return data
 
     def erase_board(self):
+        """
+            Delete all characters on the board
+        """
         self.board.config(state="normal")
         self.board.delete(0.0,"end")
         self.board.config(state="disable")

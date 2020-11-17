@@ -4,6 +4,8 @@ number system calculator converts value of a Number System from baseX to baseY p
 
 Also performs mathematical operation such as +, -, /, *
 
+system gui is built on tkinter
+
 Calculations are based on three(3) operands which are:
 
 Value = number system to be converted i.e ("10011")
@@ -15,7 +17,7 @@ o_base = Output value base
 NOTE: mathematical operator precedence must be followed befor inputing i.e A + B / C should be inputed as B / C + A in accordance with BODMAS
 
 usage:
-run as a file provided the machine has a python compiler 
+run as a file provided the machine has a python interpreter 
 
 bundled and build as an exe file (pyinstaller)
 
